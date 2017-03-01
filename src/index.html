@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Buddhi-Man</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bot.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/bot.js"></script>
+        <script type="text/javascript" src="js/splunk/splunk.min.js"></script>
+        <script type="text/javascript" src="js/splunk.js"></script>
+        <script src='js/speakClient.js'></script>
+    </head>
+    <body onLoad="initScreen()">
+    <form name="mainscreen" onkeypress = "if(event.keyCode == 13) {mainroutine();return false}">
+        <div class="menu">
+            <div onClick="runtest()" class="back"><i class="fa fa-chevron-left"></i> <img src="https://www.aexp-static.com/nav/ngn/img/logo_bluebox_2x.jpg" draggable="false"></div>
+            <div id="audio"></div>
+            <div class="name">Buddhi - Amex Bot</div>
+            <div class="last" id="clock"></div>
+        </div>
+        <div id ="chatAreaDiv">
+            <ol class="chat" id="BasicTextArea1">
+            </ol>
+        </div>
+        <input class="textarea" name="BasicTextArea4"  type="text" placeholder="Type here!"/>
+        <div class="emojis"></div>
+    </form>
+    </body>
+</html>
